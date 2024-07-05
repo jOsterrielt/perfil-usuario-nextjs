@@ -1,0 +1,56 @@
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.listContainer {
+  display: flex;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  list-style-type: none; 
+  padding: 10px;
+}
+
+.listItem {
+  flex: 1;
+  text-align: center;
+}
+
+.linkText {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.linkText:hover, .active {
+  color: #ffa726;
+}
+
+@media (max-width: 768px) {
+  .listContainer {
+    width: 90%;
+  }
+
+  .linkText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .listContainer {
+    width: 95%;
+  }
+
+  .linkText {
+    font-size: 14px;
+  }
+}

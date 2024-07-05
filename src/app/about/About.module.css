@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50%; 
+  height: auto;
+  padding: 10px;
+  margin: 0 auto; 
+  opacity: 0; 
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+.container h2 {
+  margin-bottom: 15px;
+}
+
+.container p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; 
+    
+  }
+  to {
+    opacity: 1; 
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; 
+  }
+  .container p{
+    font-size: 12px;
+  }
+  .container h2{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width:90%; 
+    
+  }
+}

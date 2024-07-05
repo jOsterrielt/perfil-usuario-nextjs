@@ -1,0 +1,115 @@
+.container {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 48vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .formGroup label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-weight: 400;
+    
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+    
+  }
+  
+  .errorContainer {
+    min-height: 16px;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffa726;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .submitButton:hover {
+    
+    background-color: #ff9900;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+      margin: 15px auto;
+      width: 90%;
+    }
+  
+    .container h2 {
+      font-size: 18px;
+    }
+  
+    .formGroup input,
+    .formGroup textarea {
+      font-size: 14px;
+    }
+  
+    .submitButton {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+      margin: 10px auto;
+    }
+  
+    .container h2 {
+      font-size: 16px;
+    }
+    .formGroup label {
+      font-size: 12px;
+    }
+    .formGroup input,
+    .formGroup textarea {
+      font-size: 12px;
+    }
+  
+    .submitButton {
+      font-size: 12px;
+    }
+  }
+  
